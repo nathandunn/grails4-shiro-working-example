@@ -1,4 +1,11 @@
----
+security:
+    shiro:
+        login:
+            controller: auth
+            action: login
+        unauthorized:
+            controller: auth
+            action: unauthorized
 grails:
     profile: web
     codegen:

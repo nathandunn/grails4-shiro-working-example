@@ -11,7 +11,7 @@ buildscript {
 }
 
 version "0.1"
-group "grails4.project"
+group "grails4.shiro.security"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -72,6 +72,10 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-support:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.14.0"
+
+    // added shiro:
+    compile "org.grails.plugins:grails-shiro:4.4"
+
 }
 
 bootRun {
